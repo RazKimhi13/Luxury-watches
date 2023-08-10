@@ -1,0 +1,138 @@
+body {
+  margin: 0px;
+  background-color: #30475e;
+
+  /* make sure the footer is down */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+  /* not giving to scroll to the side */
+  overflow-x: hidden;
+  
+  
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: left;
+  background-color: #322653;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.navbar a {
+  color: #ddd;
+  padding: 25px;
+  font-size: 1rem;
+  margin: 0px;
+  text-decoration: none;
+  margin-left: 0px;
+  margin-bottom: 5px;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  opacity: 0;
+}
+.dropdown{
+  color: #ddd;
+  padding: 25px;
+  padding-left: 0px;
+  font-size: 1rem;
+  margin: 0px;
+  text-decoration: none;
+  margin-left: 0px;
+  margin-bottom: 5px;
+  transition: 0.5s;
+  letter-spacing: 4px;
+}
+
+.navbar:hover a {
+  opacity: 1;
+}
+
+.navbar a:hover {
+  background-color: #222831;
+  color: #4e6e81;
+  border-radius: 100%;
+}
+
+.navbar img {
+  padding: 25px;
+  height: 1rem;
+  margin: 0px;
+  text-decoration: none;
+  margin-left: 0px;
+  margin-bottom: 5px;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 20%;
+
+}
+
+.dropdown-content a {
+  display: block;
+  text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+ 
+
+/* footer */
+
+.footer {
+  background-color: #322653;
+  border: 5px solid #222831;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-radius: 2%;
+  color: #ddd;
+  font-size: 0.75rem;
+  text-align: center;
+  transition: 1s;
+  letter-spacing: 3px;
+  padding-top: 1rem;
+    /* make sure the footer is down */
+  flex: 1;
+}
+
+.footer:hover {
+  background-color: #4d4c7d;
+  font-size: 1.25rem;
+  /* color: #272829; */
+}
+
+.footer:hover img {
+  height: 40px;
+  transition: 1s;
+}
+
+.social-media img {
+  height: 30px;
+  padding: 10px;
+  padding-bottom: 10px;
+  padding-top: 0px;
+}
+
+@media only screen and (max-width:1200px) {
+
+  .navbar a {
+    opacity: 1;
+    padding-right: 5px;
+    padding-left: 10px;
+    
+    
+  } 
+
+  .firstHeader {
+    font-size:4rem;
+
+  }
+}

@@ -1,0 +1,77 @@
+.comapnies-logo {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3rem;
+    padding: 10px;
+  
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  .comapnies-logo p {
+    text-align: center;
+    text-decoration: none;
+    font-family: "Dancing Script", cursive;
+    font-family: "Lugrasimo", cursive;
+    font-size: 1.5rem;
+    color: #ddd;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .comapnies-logo img {
+    height: 15rem;
+    width: auto;
+    border: 5px solid #ddd;
+    border-radius: 10%;
+    transition: 0.5s;
+  }
+  
+  #Patek-Philippe-Logo:hover + p {
+    opacity: 1;
+    letter-spacing: 5px;
+
+  }
+  
+  #louis-moinet-logo:hover + p {
+    opacity: 1;
+    letter-spacing: 5px;
+
+  }
+  
+  #rolex-logo:hover + p {
+    opacity: 1;
+    letter-spacing: 5px;
+  }
+  
+  #Patek-Philippe-Logo:hover {
+    height: 14rem;
+  }
+  
+  #louis-moinet-logo:hover {
+    height: 14rem;
+  }
+  
+  #rolex-logo:hover {
+    height: 14rem;
+  }
+
+  @media only screen and (max-width:1200px) {
+
+    .comapnies-logo{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .comapnies-logo img {
+      height: 10rem;
+      width: auto;
+      border: 5px solid #ddd;
+      border-radius: 10%;
+      transition: 0.5s;
+    }
+
+    
+  }

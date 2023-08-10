@@ -1,0 +1,97 @@
+#myVideo {
+  display: block;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.hero-grid {
+  background-color: #4e6e81;
+  margin: 0px;
+  text-align: left;
+  font-family: "Dancing Script", cursive;
+  font-family: "Lugrasimo", cursive;
+  transition: 1s;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center; /* Centers content both horizontally and vertically */
+}
+
+.hero-grid:hover {
+  background-color: #4d4c7d;
+  border: 5px solid #222831;
+}
+
+.hero-grid:hover .firstHeader {
+  font-size: 6.5rem;
+  letter-spacing: 1rem;
+}
+
+.hero-grid:hover .heroWatch {
+  height: 27rem;
+  rotate: 320deg;
+}
+
+.firstHeader {
+  font-size: 6rem;
+  transition: 1s;
+  text-align: center;
+
+  /* animation */
+  position: relative;
+  left: -200%;
+  animation: slide 1.5s forwards;
+}
+
+@keyframes slide {
+  to {
+    left: 0; /* Final position, coming in from the left */
+  }
+}
+
+.heroWatch {
+  height: 25rem;
+  transition: 1s;
+
+  /* animation */
+  position: relative;
+  right: -400%;
+  animation: slide-from-right 1s forwards;
+  animation-delay: 1.5s;
+}
+
+@keyframes slide-from-right {
+  to {
+    right: 0; /* Final position, coming in from the left */
+  }
+}
+
+#gradient-top {
+  height: 10rem;
+  background-image: linear-gradient(#322653, black);
+  margin: 0px;
+}
+
+#gradient-bottom {
+  height: 10rem;
+  background-image: linear-gradient(black, #4e6e81);
+  margin: 0px;
+}
+
+#gradient-bottom-hero {
+  height: 10rem;
+  background-image: linear-gradient(#4e6e81, #30475e);
+  margin: 0px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .firstHeader {
+    font-size:4rem;
+
+  }
+}
